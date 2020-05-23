@@ -21,8 +21,8 @@ public class StrengthModifier {
                 int permissionInteger = Integer.parseInt(valueOf(strengthPermission.lastIndexOf(".") + 1));
                 // parses the permission to find the integer at the end of the permission node
                 double d = (double) permissionInteger / 2;
-                if (PlayerAttributeEditor.debug) {
-                    System.out.println("Successfully modified generic attack damage. DOUBLE - " + d);
+                if (PlayerAttributeEditor.debug = true) {
+                    PlayerAttributeEditor.console.sendMessage("Successfully modified generic attack damage. DOUBLE - " + d);
                 }
                 Objects.requireNonNull(whoWasHit.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE)).setBaseValue(d);
                 // sets the base value, dont set it to 1 or else your player will be weaker than usual!

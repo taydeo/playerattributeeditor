@@ -1,0 +1,20 @@
+name: PlayerAttributeEditor
+version: 1.0-SNAPSHOT
+main: net.cascene.playerattributeeditor.PlayerAttributeEditor
+api-version: 1.13
+authors: [taydeo]
+description: Changes player attributes with the use of permission nodes.
+website: cascene.net
+permissions:
+  playeratteditor.strength:
+    description: Gives player strength
+  playeratteditor.resist:
+    description: Gives player Resistence
+  playeratteditor.speed:
+    description: Gives player speed boost
+  playeratteditor.jump:
+    description: Gives player jump boost
+  playeratteditor.knockback:
+    description: Gives player increased hitknock back
+  playeratteditor.health:
+    description: Gives player increased health boost

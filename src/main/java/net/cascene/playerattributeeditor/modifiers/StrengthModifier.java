@@ -1,5 +1,6 @@
 package net.cascene.playerattributeeditor.modifiers;
 
+import net.cascene.playerattributeeditor.PlayerAttributeEditor;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
@@ -7,19 +8,25 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import static java.lang.String.valueOf;
+
 public class StrengthModifier {
 
-    public StrengthModifier(@NotNull ArrayList permissions, Player whoWasHit) {
-        int i = 0;
-        if (permissions.contains("playeratteditor.strength.")) {
-            String strengthPermissionNode = String.valueOf(permissions);
-            i = Integer.parseInt(String.valueOf(strengthPermissionNode.lastIndexOf(".") + 1));
-            // returns the strength permission node and gets the number after the last "."
-            // it was hell trying to figure this out.
-        }
-        double dBeforeMath = i;
-        double d = dBeforeMath / 2;
+    public StrengthModifier(@NotNull ArrayList permissions, @NotNull Player whoWasHit) {
 
-        Objects.requireNonNull(whoWasHit.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE)).setBaseValue(d);
+        for (Object permission : permissions) {
+            if ("playeratteditor.strength." == permission) {
+                // looks for "playeratteditor.strength." and stores it in strengthPermission
+                String strengthPermission = (String) permission;
+                int permissionInteger = Integer.parseInt(valueOf(strengthPermission.lastIndexOf(".") + 1));
+                // parses the permission to find the integer at the end of the permission node
+                double d = (double) permissionInteger / 2;
+                if (PlayerAttributeEditor.debug) {
+                    System.out.println("Successfully modified generic attack damage. DOUBLE - " + d);
+                }
+                Objects.requireNonNull(whoWasHit.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE)).setBaseValue(d);
+                // sets the base value, dont set it to 1 or else your player will be weaker than usual!
+            }
+        }
     }
 }

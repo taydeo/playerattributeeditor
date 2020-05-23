@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3442e43-09ea-4048-9a20-5c34e1fb4157" name="Default Changelist" comment="">
+    <list default="true" id="a3442e43-09ea-4048-9a20-5c34e1fb4157" name="Default Changelist" comment="optimized code, and fixed error that would always return the modifier to 0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/listeners/PermissionArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/listeners/PlayerHitEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -113,7 +127,8 @@
       <workItem from="1590018684463" duration="5358000" />
       <workItem from="1590184110175" duration="18127000" />
       <workItem from="1590207496077" duration="2210000" />
-      <workItem from="1590257703066" duration="5549000" />
+      <workItem from="1590257703066" duration="9921000" />
+      <workItem from="1590273055097" duration="2332000" />
     </task>
     <task id="LOCAL-00001" summary="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers.">
       <created>1590262538876</created>
@@ -122,15 +137,36 @@
       <option name="project" value="LOCAL" />
       <updated>1590262538876</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers.">
+      <created>1590263498684</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590263498684</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers." />
-    <option name="LAST_COMMIT_MESSAGE" value="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers." />
+    <MESSAGE value="optimized code, and fixed error that would always return the modifier to 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimized code, and fixed error that would always return the modifier to 0" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -142,10 +178,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="311" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590260004700" />
-    <state x="768" y="265" width="374" height="584" key="#com.intellij.ide.util.MemberChooser" timestamp="1590207039605">
+    <state x="768" y="265" width="374" height="584" key="#com.intellij.ide.util.MemberChooser" timestamp="1590266957218">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="768" y="265" width="374" height="584" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1590207039605" />
+    <state x="768" y="265" width="374" height="584" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1590266957218" />
     <state x="803" y="445" width="303" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1590018712150">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -154,18 +190,18 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="302" width="524" height="510" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590201474647" />
-    <state x="444" y="148" width="1022" height="817" key="CommitChangelistDialog2" timestamp="1590262538679">
+    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1590275265708">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="444" y="148" width="1022" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1590262538679" />
+    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1590275265708" />
     <state x="182" y="121" width="1536" height="879" key="DiffContextDialog" timestamp="1590258552270">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="182" y="121" width="1536" height="879" key="DiffContextDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590258552270" />
-    <state x="604" y="300" width="691" height="528" key="FileChooserDialogImpl" timestamp="1590258528902">
+    <state x="604" y="300" width="691" height="528" key="FileChooserDialogImpl" timestamp="1590266298131">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="604" y="300" width="691" height="528" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1590258528902" />
+    <state x="604" y="300" width="691" height="528" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1590266298131" />
     <state x="786" y="448" width="337" height="217" key="Github.ShareDialog" timestamp="1590258664027">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -186,14 +222,14 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="443" y="131" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1590263255723" />
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1590263263197">
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1590263762520">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1590263263197" />
-    <state x="630" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1590257738677">
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1590263762520" />
+    <state x="630" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1590273052776">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="630" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590257738677" />
+    <state x="630" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590273052776" />
     <state x="656" y="170" width="597" height="773" key="refactoring.ChangeSignatureDialog" timestamp="1590262170651">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

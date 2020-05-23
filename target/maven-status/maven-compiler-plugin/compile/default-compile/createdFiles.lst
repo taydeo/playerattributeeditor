@@ -1,4 +1,2 @@
 net/cascene/playerattributeeditor/PlayerAttributeEditor.class
-net/cascene/playerattributeeditor/listeners/PermissionArrayList.class
 net/cascene/playerattributeeditor/modifiers/StrengthModifier.class
-net/cascene/playerattributeeditor/listeners/PlayerHitEvent.class

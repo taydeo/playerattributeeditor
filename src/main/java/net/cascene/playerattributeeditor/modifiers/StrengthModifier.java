@@ -1,48 +1,25 @@
 package net.cascene.playerattributeeditor.modifiers;
 
-import net.cascene.playerattributeeditor.PlayerAttributeEditor;
-import net.cascene.playerattributeeditor.listeners.PermissionArrayList;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.permissions.PermissionAttachmentInfo;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class StrengthModifier {
-    PlayerInteractEvent event;
-    Player player = event.getPlayer();
 
-    ArrayList strengthPermissionsList;
-
-    {
-        try {
-            strengthPermissionsList = (ArrayList) new PermissionArrayList().call();
-        } catch (Exception e) {
-            e.printStackTrace();
+    public StrengthModifier(@NotNull ArrayList permissions, Player whoWasHit) {
+        int i = 0;
+        if (permissions.contains("playeratteditor.strength.")) {
+            String strengthPermissionNode = String.valueOf(permissions);
+            i = Integer.parseInt(String.valueOf(strengthPermissionNode.lastIndexOf(".") + 1));
+            // returns the strength permission node and gets the number after the last "."
+            // it was hell trying to figure this out.
         }
+        double dBeforeMath = i;
+        double d = dBeforeMath / 2;
+
+        Objects.requireNonNull(whoWasHit.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE)).setBaseValue(d);
     }
-
-    private int StrengthModifier() {
-        int ModifierInt = 0;
-        if (strengthPermissionsList.contains("playeratteditor.strength.")) {
-            PermissionAttachmentInfo perms = (PermissionAttachmentInfo) player.getEffectivePermissions();
-            if (perms.getPermission().startsWith("playeratteditor.strength.")) {
-                ModifierInt = Integer.parseInt(perms.getPermission().split("team.maxsize.")[2]);
-            }
-
-        } else {
-            System.out.println(PlayerAttributeEditor.prefix + "Error encountered.");
-        }
-        return ModifierInt;
-    }
-
-    public void ChangePlayerStrengthStat() {
-        double dBeforeMath = StrengthModifier();
-        double d = dBeforeMath/2;
-
-        Objects.requireNonNull(player.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE)).setBaseValue(d);
-    }
-
 }

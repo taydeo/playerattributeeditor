@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3442e43-09ea-4048-9a20-5c34e1fb4157" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_15_2_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_15_2_R0_1_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playerattributeeditor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/playerattributeeditor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/listeners/PermissionArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/listeners/PlayerHitEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +58,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunManager">
     <configuration name="playerattributeeditor build" type="MavenRunConfiguration" factoryName="Maven">
@@ -120,14 +113,31 @@
       <workItem from="1590018684463" duration="5358000" />
       <workItem from="1590184110175" duration="18127000" />
       <workItem from="1590207496077" duration="2210000" />
-      <workItem from="1590257703066" duration="4780000" />
+      <workItem from="1590257703066" duration="5549000" />
     </task>
+    <task id="LOCAL-00001" summary="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers.">
+      <created>1590262538876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590262538876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers." />
+    <option name="LAST_COMMIT_MESSAGE" value="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers." />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="555" y="215" width="800" height="684" key="#Notifications" timestamp="1590262576562">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="215" width="800" height="684" key="#Notifications/0.27.1920.1053@0.27.1920.1053" timestamp="1590262576562" />
     <state x="693" y="311" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1590260004700">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -144,10 +154,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="302" width="524" height="510" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590201474647" />
-    <state x="444" y="148" width="1022" height="817" key="CommitChangelistDialog2" timestamp="1590258579383">
+    <state x="444" y="148" width="1022" height="817" key="CommitChangelistDialog2" timestamp="1590262538679">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="444" y="148" width="1022" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1590258579383" />
+    <state x="444" y="148" width="1022" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1590262538679" />
     <state x="182" y="121" width="1536" height="879" key="DiffContextDialog" timestamp="1590258552270">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -164,18 +174,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="629" y="259" width="652" height="596" key="Github.UntrackedFilesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590258690851" />
+    <state x="543" y="290" width="824" height="534" key="IDE.errors.dialog" timestamp="1590263277929">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="543" y="290" width="824" height="534" key="IDE.errors.dialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590263277929" />
     <state x="493" y="211" width="924" height="691" key="Maven.ArtifactSearchDialog" timestamp="1590259869051">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="493" y="211" width="924" height="691" key="Maven.ArtifactSearchDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590259869051" />
-    <state x="443" y="131" width="1024" height="852" key="SettingsEditor" timestamp="1590022078105">
+    <state x="443" y="131" width="1024" height="852" key="SettingsEditor" timestamp="1590263255723">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="443" y="131" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1590022078105" />
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1590258712751">
+    <state x="443" y="131" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1590263255723" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1590263263197">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1590258712751" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1590263263197" />
     <state x="630" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1590257738677">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

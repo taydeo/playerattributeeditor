@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3442e43-09ea-4048-9a20-5c34e1fb4157" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/JumpModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/ResistModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/SpeedModifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +29,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -66,7 +67,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -125,7 +126,7 @@
       <workItem from="1590184110175" duration="18127000" />
       <workItem from="1590207496077" duration="2210000" />
       <workItem from="1590257703066" duration="9921000" />
-      <workItem from="1590273055097" duration="13054000" />
+      <workItem from="1590273055097" duration="15265000" />
     </task>
     <task id="LOCAL-00001" summary="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers.">
       <created>1590262538876</created>
@@ -155,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590275707461</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="We got a fully functional strength modifier :)">
+      <created>1590286859520</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590286859520</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,14 +187,15 @@
     <MESSAGE value="optimized code, and fixed error that would always return the modifier to 0" />
     <MESSAGE value="optimized code even further" />
     <MESSAGE value="fixed debug messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed debug messages" />
+    <MESSAGE value="We got a fully functional strength modifier :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="We got a fully functional strength modifier :)" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="555" y="215" width="800" height="684" key="#Notifications" timestamp="1590262576562">
+    <state x="555" y="215" width="800" height="684" key="#Notifications" timestamp="1590288890625">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="215" width="800" height="684" key="#Notifications/0.27.1920.1053@0.27.1920.1053" timestamp="1590262576562" />
+    <state x="555" y="215" width="800" height="684" key="#Notifications/0.27.1920.1053@0.27.1920.1053" timestamp="1590288890625" />
     <state x="693" y="311" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1590260004700">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -203,10 +212,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="302" width="524" height="510" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590201474647" />
-    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1590286847764">
+    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1590288994494">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1590286847764" />
+    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1590288994494" />
     <state x="182" y="121" width="1536" height="879" key="DiffContextDialog" timestamp="1590258552270">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -231,10 +240,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="493" y="211" width="924" height="691" key="Maven.ArtifactSearchDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590259869051" />
-    <state x="443" y="131" width="1024" height="852" key="SettingsEditor" timestamp="1590263255723">
+    <state x="443" y="131" width="1024" height="852" key="SettingsEditor" timestamp="1590288929896">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="443" y="131" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1590263255723" />
+    <state x="443" y="131" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1590288929896" />
     <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1590275411804">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -243,6 +252,14 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="630" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590273052776" />
+    <state x="738" y="473" width="434" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590288885112">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="738" y="473" width="434" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1590288885112" />
+    <state x="693" y="317" width="524" height="480" key="extract.method.dialog" timestamp="1590287890115">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="693" y="317" width="524" height="480" key="extract.method.dialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590287890115" />
     <state x="656" y="170" width="597" height="773" key="refactoring.ChangeSignatureDialog" timestamp="1590262170651">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

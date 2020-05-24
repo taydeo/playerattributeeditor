@@ -1,4 +1,4 @@
-# playerattributeeditor
+# PlayerAttributeEditor
 Plugin to change player stats with permission nodes.
 
 ## Why did I make this?

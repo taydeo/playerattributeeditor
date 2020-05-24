@@ -1,6 +1,5 @@
 package net.cascene.playerattributeeditor.modifiers;
 
-import net.cascene.playerattributeeditor.PlayerAttributeEditor;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;

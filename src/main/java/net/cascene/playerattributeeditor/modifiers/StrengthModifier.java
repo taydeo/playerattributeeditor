@@ -20,7 +20,7 @@ public class StrengthModifier {
                 // looks for "playeratteditor.strength." and stores it in strengthPermission
                 int permissionInteger = Integer.parseInt(valueOf(strengthPermission.lastIndexOf(".") + 1));
                 // parses the permission to find the integer at the end of the permission node
-                double d = (double) permissionInteger / 2.0;
+                double d = (double) permissionInteger * 0.5;
                 Objects.requireNonNull(whoWasHit.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE)).setBaseValue(d);
                 // sets the base value, dont set it to 1 or else your player will be weaker than usual!
 

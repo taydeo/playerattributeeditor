@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3442e43-09ea-4048-9a20-5c34e1fb4157" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/JumpModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/ResistModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/SpeedModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_15_2_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_15_2_R0_1_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/ResistModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/ResistModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/SpeedModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/SpeedModifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +36,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$/.idea" />
-      </set>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="downloadDocsAutomatically" value="true" />
         <option name="downloadSourcesAutomatically" value="true" />
-        <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -51,7 +48,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -100,18 +96,6 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -126,7 +110,9 @@
       <workItem from="1590184110175" duration="18127000" />
       <workItem from="1590207496077" duration="2210000" />
       <workItem from="1590257703066" duration="9921000" />
-      <workItem from="1590273055097" duration="15265000" />
+      <workItem from="1590273055097" duration="16362000" />
+      <workItem from="1590340155731" duration="25000" />
+      <workItem from="1590340413256" duration="530000" />
     </task>
     <task id="LOCAL-00001" summary="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers.">
       <created>1590262538876</created>
@@ -163,24 +149,37 @@
       <option name="project" value="LOCAL" />
       <updated>1590286859520</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added the other classes for future modifiers">
+      <created>1590289026017</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590289026017</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Made notes easier to understand">
+      <created>1590289699745</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590289699745</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers." />
@@ -188,7 +187,9 @@
     <MESSAGE value="optimized code even further" />
     <MESSAGE value="fixed debug messages" />
     <MESSAGE value="We got a fully functional strength modifier :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="We got a fully functional strength modifier :)" />
+    <MESSAGE value="Added the other classes for future modifiers" />
+    <MESSAGE value="Made notes easier to understand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made notes easier to understand" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -212,10 +213,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="302" width="524" height="510" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590201474647" />
-    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1590288994494">
+    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1590289699636">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1590288994494" />
+    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1590289699636" />
     <state x="182" y="121" width="1536" height="879" key="DiffContextDialog" timestamp="1590258552270">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

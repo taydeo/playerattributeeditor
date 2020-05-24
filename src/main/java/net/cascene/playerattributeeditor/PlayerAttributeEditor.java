@@ -1,5 +1,6 @@
 package net.cascene.playerattributeeditor;
 
+import net.cascene.playerattributeeditor.modifiers.ResistModifier;
 import net.cascene.playerattributeeditor.modifiers.SpeedModifier;
 import net.cascene.playerattributeeditor.modifiers.StrengthModifier;
 import org.bukkit.Bukkit;
@@ -55,6 +56,7 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
                 if (permInfo.getPermission().startsWith("playeratteditor.")) {
                     permissions.add(permInfo.getPermission());
                     new StrengthModifier(permissions, whoWasHit); // then sends the array list to StrengthModifier
+                    new ResistModifier(permissions, whoWasHit); // theoretically should also send it to ResistModifier
                     if (debug) {
                         System.out.println(permissions);
                         System.out.println(whoWasHit);

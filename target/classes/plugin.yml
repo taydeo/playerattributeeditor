@@ -8,8 +8,8 @@ website: cascene.net
 permissions:
   playeratteditor.strength:
     description: Gives player strength
-  playeratteditor.resist:
-    description: Gives player Resistence
+  playeratteditor.kbresist:
+    description: Gives player knockback resistence
   playeratteditor.speed:
     description: Gives player speed boost
   playeratteditor.jump:

@@ -25,7 +25,7 @@ public class ResistModifier {
                 */
                 
                 Objects.requireNonNull(whoWasHit.getAttribute(Attribute.GENERIC_KNOCKBACK_RESISTANCE)).setBaseValue(d);
-                // sets the base value, dont set it to 1 or else your player will be slower than usual!
+                // doesnt matter what you set it to, as long as its an integer.
 
             } else {
                 Objects.requireNonNull(whoWasHit.getAttribute(Attribute.GENERIC_KNOCKBACK_RESISTANCE)).setBaseValue(0.0);

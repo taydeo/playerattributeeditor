@@ -12,20 +12,28 @@ import static java.lang.String.valueOf;
 
 public class StrengthModifier {
 
+    private PlayerAttributeEditor plugin;
+
+    public StrengthModifier(PlayerAttributeEditor plugin){
+            this.plugin = plugin;
+    }
+
     public StrengthModifier(@NotNull ArrayList permissions, @NotNull Player whoWasHit) {
+        System.out.println("StrengthModifier Class - " + permissions);
 
         for (Object permission : permissions) {
-            if ("playeratteditor.strength." == permission) {
+            String strengthPermission = (String) permission; // converts object into string cuz it be annoying
+            if (strengthPermission.contains("playeratteditor.strength.")) {
                 // looks for "playeratteditor.strength." and stores it in strengthPermission
-                String strengthPermission = (String) permission;
                 int permissionInteger = Integer.parseInt(valueOf(strengthPermission.lastIndexOf(".") + 1));
                 // parses the permission to find the integer at the end of the permission node
                 double d = (double) permissionInteger / 2;
-                if (PlayerAttributeEditor.debug = true) {
-                    PlayerAttributeEditor.console.sendMessage("Successfully modified generic attack damage. DOUBLE - " + d);
-                }
                 Objects.requireNonNull(whoWasHit.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE)).setBaseValue(d);
                 // sets the base value, dont set it to 1 or else your player will be weaker than usual!
+
+            } else {
+                Objects.requireNonNull(whoWasHit.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE)).setBaseValue(1);
+                System.out.println("Machine broke, using default 1.");
             }
         }
     }

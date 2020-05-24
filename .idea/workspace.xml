@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a3442e43-09ea-4048-9a20-5c34e1fb4157" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +125,7 @@
       <workItem from="1590184110175" duration="18127000" />
       <workItem from="1590207496077" duration="2210000" />
       <workItem from="1590257703066" duration="9921000" />
-      <workItem from="1590273055097" duration="2640000" />
+      <workItem from="1590273055097" duration="13054000" />
     </task>
     <task id="LOCAL-00001" summary="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers.">
       <created>1590262538876</created>
@@ -143,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590275404748</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed debug messages">
+      <created>1590275707461</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590275707461</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +178,8 @@
     <MESSAGE value="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers." />
     <MESSAGE value="optimized code, and fixed error that would always return the modifier to 0" />
     <MESSAGE value="optimized code even further" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimized code even further" />
+    <MESSAGE value="fixed debug messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed debug messages" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -190,10 +203,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="302" width="524" height="510" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590201474647" />
-    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1590275404388">
+    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1590286847764">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1590275404388" />
+    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1590286847764" />
     <state x="182" y="121" width="1536" height="879" key="DiffContextDialog" timestamp="1590258552270">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

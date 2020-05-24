@@ -11,6 +11,7 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -37,7 +38,7 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
 
     @EventHandler
     public void onHit(EntityDamageByEntityEvent e) {
-        ArrayList<String> permissions = new ArrayList<String>(); // For storing permissions
+        @NotNull ArrayList<String> permissions = new ArrayList<>(); // For storing permissions
         Player whoWasHit;
 
         if (e.getEntity() instanceof Player) {
@@ -47,11 +48,15 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
                 So I basically made it cycle through all the players perms and
                 it gets all the permission nodes that start with "playeratteditor."
             */
-            for (PermissionAttachmentInfo permission : whoWasHit.getEffectivePermissions()) {
-                if (permission.getPermission().startsWith("playeratteditor.")) {
-                    permissions.add(String.valueOf(permission.getPermission().startsWith("playeratteditor.")));
+            for (PermissionAttachmentInfo permInfo : whoWasHit.getEffectivePermissions()) {
+                if (permInfo.getPermission().startsWith("playeratteditor.")) {
+                    permissions.add(permInfo.getPermission());
+                    new StrengthModifier(permissions, whoWasHit); // then sends the array list to StrengthModifier
+                    if (debug) {
+                        System.out.println(permissions);
+                        System.out.println(whoWasHit);
+                    }
                 }
-                new StrengthModifier(permissions, whoWasHit); // then sends the array list to StrengthModifier
             }
         }
     }

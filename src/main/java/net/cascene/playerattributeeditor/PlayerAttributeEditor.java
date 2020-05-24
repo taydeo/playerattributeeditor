@@ -73,7 +73,7 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
             for (PermissionAttachmentInfo permInfo: daSprinter.getEffectivePermissions()) {
                 if (permInfo.getPermission().startsWith("playeratteditor.")) {
                     permissions.add(permInfo.getPermission());
-                    new SpeedModifier(permissions, daSprinter); // then sends the array list to StrengthModifier
+                    new SpeedModifier(permissions, daSprinter); // then sends the array list to SpeedModifier
                     if (debug) {
                         System.out.println(permissions);
                         System.out.println(daSprinter);

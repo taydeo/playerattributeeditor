@@ -13,7 +13,6 @@ import static java.lang.String.valueOf;
 public class StrengthModifier {
 
     public StrengthModifier(@NotNull ArrayList permissions, @NotNull Player whoWasHit) {
-        System.out.println("StrengthModifier Class - " + permissions);
 
         for (Object permission: permissions) {
             String strengthPermission = (String) permission; // converts object into string cuz it be annoying

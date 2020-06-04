@@ -1,17 +1,17 @@
 package net.cascene.playerattributeeditor;
 
+import net.cascene.playerattributeeditor.modifiers.JumpModifier;
 import net.cascene.playerattributeeditor.modifiers.ResistModifier;
 import net.cascene.playerattributeeditor.modifiers.SpeedModifier;
 import net.cascene.playerattributeeditor.modifiers.StrengthModifier;
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import org.bukkit.event.entity.EntityEvent;
+import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -52,7 +52,7 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
        So I basically made it cycle through all the players perms and
        it gets all the permission nodes that start with "playeratteditor."
    */
-            for (PermissionAttachmentInfo permInfo: whoWasHit.getEffectivePermissions()) {
+            for (PermissionAttachmentInfo permInfo : whoWasHit.getEffectivePermissions()) {
                 if (permInfo.getPermission().startsWith("playeratteditor.")) {
                     permissions.add(permInfo.getPermission());
                     new StrengthModifier(permissions, whoWasHit); // then sends the array list to StrengthModifier
@@ -67,18 +67,35 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
     }
 
     @EventHandler
-    public void onSprint(EntityEvent e) {
+    public void onSprint(PlayerMoveEvent p) { // now uses PlayerMoveEvent
         @NotNull ArrayList < String > permissions = new ArrayList < > (); // For storing permissions... again
-        Player daSprinter = (Player) e.getEntity();
-
-        if (daSprinter.isSprinting()) { // obviously checks if the player is running
-            for (PermissionAttachmentInfo permInfo: daSprinter.getEffectivePermissions()) {
+        Player player = p.getPlayer();
+        if (player.isJumping()) {
+            for (PermissionAttachmentInfo permInfo : player.getEffectivePermissions()) {
                 if (permInfo.getPermission().startsWith("playeratteditor.")) {
                     permissions.add(permInfo.getPermission());
-                    new SpeedModifier(permissions, daSprinter); // then sends the array list to SpeedModifier
+                    new JumpModifier(permissions, player); // then sends the array list to SpeedModifier
                     if (debug) {
                         System.out.println(permissions);
-                        System.out.println(daSprinter);
+                        System.out.println(player);
+                    }
+                }
+            }
+        }
+
+        /*
+        for (PermissionAttachmentInfo permInfo: player.getEffectivePermissions()) {
+        cant see a way to make this a seperate function
+         */
+
+        if (player.isSprinting()) { // obviously checks if the player is running
+            for (PermissionAttachmentInfo permInfo: player.getEffectivePermissions()) {
+                if (permInfo.getPermission().startsWith("playeratteditor.")) {
+                    permissions.add(permInfo.getPermission());
+                    new SpeedModifier(permissions, player); // then sends the array list to SpeedModifier
+                    if (debug) {
+                        System.out.println(permissions);
+                        System.out.println(player);
                     }
                 }
             }

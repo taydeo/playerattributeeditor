@@ -1,5 +1,5 @@
 name: PlayerAttributeEditor
-version: 1.0-SNAPSHOT
+version: 1.2-SNAPSHOT
 main: net.cascene.playerattributeeditor.PlayerAttributeEditor
 api-version: 1.13
 authors: [taydeo]

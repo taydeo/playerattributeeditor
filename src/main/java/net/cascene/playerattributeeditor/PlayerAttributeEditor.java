@@ -5,6 +5,7 @@ import net.cascene.playerattributeeditor.modifiers.ResistModifier;
 import net.cascene.playerattributeeditor.modifiers.SpeedModifier;
 import net.cascene.playerattributeeditor.modifiers.StrengthModifier;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -29,7 +30,7 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
 
     @Override
     public void onEnable() {
-        console.sendMessage(prefix + "Plugin successfully loaded. Made by taydeo for the Cascene Network, released to SpigotMC.org");
+        console.sendMessage(ChatColor.GOLD + prefix + "Plugin successfully loaded. Made by taydeo for the Cascene Network, released to SpigotMC.org");
         pm.registerEvents(this, this);
         config.addDefault("debug", false);
         config.options().copyDefaults(true);
@@ -52,7 +53,7 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
        So I basically made it cycle through all the players perms and
        it gets all the permission nodes that start with "playeratteditor."
    */
-            for (PermissionAttachmentInfo permInfo : whoWasHit.getEffectivePermissions()) {
+            for (PermissionAttachmentInfo permInfo: whoWasHit.getEffectivePermissions()) {
                 if (permInfo.getPermission().startsWith("playeratteditor.")) {
                     permissions.add(permInfo.getPermission());
                     new StrengthModifier(permissions, whoWasHit); // then sends the array list to StrengthModifier
@@ -67,11 +68,11 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
     }
 
     @EventHandler
-    public void onSprint(PlayerMoveEvent p) { // now uses PlayerMoveEvent
+    public void onMove(PlayerMoveEvent p) { // now uses PlayerMoveEvent
         @NotNull ArrayList < String > permissions = new ArrayList < > (); // For storing permissions... again
         Player player = p.getPlayer();
-        if (player.isJumping()) {
-            for (PermissionAttachmentInfo permInfo : player.getEffectivePermissions()) {
+        for (PermissionAttachmentInfo permInfo: player.getEffectivePermissions()) {
+            if (player.isJumping()) {
                 if (permInfo.getPermission().startsWith("playeratteditor.")) {
                     permissions.add(permInfo.getPermission());
                     new JumpModifier(permissions, player); // then sends the array list to SpeedModifier
@@ -81,15 +82,8 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
                     }
                 }
             }
-        }
 
-        /*
-        for (PermissionAttachmentInfo permInfo: player.getEffectivePermissions()) {
-        cant see a way to make this a seperate function
-         */
-
-        if (player.isSprinting()) { // obviously checks if the player is running
-            for (PermissionAttachmentInfo permInfo: player.getEffectivePermissions()) {
+            if (player.isSprinting()) { // obviously checks if the player is running
                 if (permInfo.getPermission().startsWith("playeratteditor.")) {
                     permissions.add(permInfo.getPermission());
                     new SpeedModifier(permissions, player); // then sends the array list to SpeedModifier

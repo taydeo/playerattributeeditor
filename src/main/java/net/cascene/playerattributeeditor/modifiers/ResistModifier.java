@@ -17,9 +17,9 @@ public class ResistModifier {
             // parses the permission to find the integer at the end of the permission node
             double d = (double) permissionInteger * 0.01;
             /*
-             * So lets say you have 4 as your integer, it makes the 4 into 0.04. Then that becomes your Knockback Resist Modifier.
-             * For any noticable effect, I would recommend using 10s. Multiplying by 0.01 lets you be more precise
-             * and calculated for your specific Knockback Resist values.
+              So lets say you have 4 as your integer, it makes the 4 into 0.04. Then that becomes your Knockback Resist Modifier.
+              For any noticable effect, I would recommend using 10s. Multiplying by 0.01 lets you be more precise
+              and calculated for your specific Knockback Resist values.
              */
             Objects.requireNonNull(whoWasHit.getAttribute(Attribute.GENERIC_KNOCKBACK_RESISTANCE)).setBaseValue(d);
             // doesnt matter what you set it to, as long as its an integer.

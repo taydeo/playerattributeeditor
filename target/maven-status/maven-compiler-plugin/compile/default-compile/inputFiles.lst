@@ -1,3 +1,5 @@
 /home/tadeo/playerattributeeditor/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java
-/home/tadeo/playerattributeeditor/src/main/java/net/cascene/playerattributeeditor/listeners/PermissionArrayList.java
+/home/tadeo/playerattributeeditor/src/main/java/net/cascene/playerattributeeditor/modifiers/ResistModifier.java
 /home/tadeo/playerattributeeditor/src/main/java/net/cascene/playerattributeeditor/modifiers/StrengthModifier.java
+/home/tadeo/playerattributeeditor/src/main/java/net/cascene/playerattributeeditor/modifiers/JumpModifier.java
+/home/tadeo/playerattributeeditor/src/main/java/net/cascene/playerattributeeditor/modifiers/SpeedModifier.java

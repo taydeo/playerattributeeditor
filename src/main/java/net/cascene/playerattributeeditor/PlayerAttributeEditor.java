@@ -71,6 +71,7 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
     public void onMove(PlayerMoveEvent p) { // now uses PlayerMoveEvent
         @NotNull ArrayList < String > permissions = new ArrayList < > (); // For storing permissions... again
         Player player = p.getPlayer();
+
         for (PermissionAttachmentInfo permInfo: player.getEffectivePermissions()) {
             if (player.isJumping()) {
                 if (permInfo.getPermission().startsWith("playeratteditor.")) {

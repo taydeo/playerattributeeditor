@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3442e43-09ea-4048-9a20-5c34e1fb4157" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_15_2_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_15_2_R0_1_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_15_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_15_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/ResistModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/ResistModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/SpeedModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/modifiers/SpeedModifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +45,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -65,10 +56,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="playerattributeeditor build" type="MavenRunConfiguration" factoryName="Maven">
@@ -119,7 +111,8 @@
       <workItem from="1591150492174" duration="778000" />
       <workItem from="1591227199586" duration="10000" />
       <workItem from="1591227228122" duration="4344000" />
-      <workItem from="1591313528826" duration="5243000" />
+      <workItem from="1591313528826" duration="5421000" />
+      <workItem from="1591395893742" duration="714000" />
     </task>
     <task id="LOCAL-00001" summary="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers.">
       <created>1590262538876</created>
@@ -191,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591230661431</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Optimized code even further &lt;3">
+      <created>1591320481970</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1591320481970</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +223,8 @@
     <MESSAGE value="Edited notes, and also added ResistModifier to the main onHit() function" />
     <MESSAGE value="Fixed some imports" />
     <MESSAGE value="Optimized permission node finding code, and added Jump Modifier" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimized permission node finding code, and added Jump Modifier" />
+    <MESSAGE value="Optimized code even further &lt;3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized code even further &lt;3" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -247,10 +248,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="302" width="524" height="510" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590201474647" />
-    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1591230661124">
+    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1591320481294">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1591230661124" />
+    <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1591320481294" />
     <state x="182" y="121" width="1536" height="879" key="DiffContextDialog" timestamp="1590340961050">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -275,10 +276,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="493" y="211" width="924" height="691" key="Maven.ArtifactSearchDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590259869051" />
-    <state x="455" y="27" width="1024" height="852" key="SettingsEditor" timestamp="1591230647291">
+    <state x="455" y="27" width="1024" height="852" key="SettingsEditor" timestamp="1591395955455">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="455" y="27" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1591230647291" />
+    <state x="455" y="27" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1591395955455" />
     <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591230673570">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

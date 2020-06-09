@@ -6,6 +6,7 @@ import net.cascene.playerattributeeditor.modifiers.SpeedModifier;
 import net.cascene.playerattributeeditor.modifiers.StrengthModifier;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Location;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -71,9 +72,12 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
     public void onMove(PlayerMoveEvent p) { // now uses PlayerMoveEvent
         @NotNull ArrayList < String > permissions = new ArrayList < > (); // For storing permissions... again
         Player player = p.getPlayer();
+        Location from = p.getFrom();
+        Location to = p.getTo();
 
         for (PermissionAttachmentInfo permInfo: player.getEffectivePermissions()) {
-            if (player.isJumping()) {
+            assert to != null;
+            if (from.getBlockY() < to.getBlockY() && !player.isSwimming() && !player.isFlying()) { // wasnt there a player.isJumping method?
                 if (permInfo.getPermission().startsWith("playeratteditor.")) {
                     permissions.add(permInfo.getPermission());
                     new JumpModifier(permissions, player); // then sends the array list to SpeedModifier

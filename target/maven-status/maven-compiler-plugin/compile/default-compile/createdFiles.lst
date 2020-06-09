@@ -1,5 +1,5 @@
 net/cascene/playerattributeeditor/PlayerAttributeEditor.class
 net/cascene/playerattributeeditor/modifiers/JumpModifier.class
-net/cascene/playerattributeeditor/modifiers/StrengthModifier.class
 net/cascene/playerattributeeditor/modifiers/ResistModifier.class
+net/cascene/playerattributeeditor/modifiers/StrengthModifier.class
 net/cascene/playerattributeeditor/modifiers/SpeedModifier.class

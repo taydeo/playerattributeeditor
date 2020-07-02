@@ -3,7 +3,7 @@ Plugin to change player stats with permission nodes.
 
 ## Why did I make this?
 
-Firstly, most other plugins I searched do not offer a simple functionality without a ridiculus GUI, unnessacary features,
+Firstly, most other plugins I searched do not offer a simple functionality without a ridiculus GUI, extra unneeded features,
 and forced RPG leveling. I was frustrated, so I legitmately said F*** it, I'm gonna make my own plugin.
 
 ## How do I compile from source?
@@ -16,7 +16,7 @@ Of course, its github lol
 
 ## Where can I get support?
 
-Join my Discord server, https://discord.gg/tPuQDtS
+DM me on discord, might make a server if it gets popular. tadeo#8262
 
 ## Can I help you make updates?
 

@@ -5,16 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_15_2_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_15_2_R0_1_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/playerattributeeditor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/playerattributeeditor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cascene/playerattributeeditor/PlayerAttributeEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/PlayerAttributeEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/cascene/playerattributeeditor/modifiers/StrengthModifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-PlayerAttributeEditor-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +120,8 @@
       <workItem from="1591737246983" duration="231000" />
       <workItem from="1591737495172" duration="311000" />
       <workItem from="1591737831341" duration="352000" />
+      <workItem from="1593734326677" duration="133000" />
+      <workItem from="1593734498974" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers.">
       <created>1590262538876</created>

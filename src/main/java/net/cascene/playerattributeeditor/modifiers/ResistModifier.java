@@ -10,7 +10,7 @@ import java.util.Objects;
 import static java.lang.String.valueOf;
 
 public class ResistModifier {
-    public ResistModifier(@NotNull ArrayList < String > permissions, @NotNull Player whoWasHit) {
+    public ResistModifier(@NotNull ArrayList <String> permissions, @NotNull Player whoWasHit) {
         if (permissions.contains("playeratteditor.jump.")) {
             // looks for "playeratteditor.resist." and stores it in resistPermission
             int permissionInteger = Integer.parseInt(valueOf(permissions.lastIndexOf(".") + 1));

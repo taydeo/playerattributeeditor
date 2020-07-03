@@ -10,7 +10,7 @@ import java.util.Objects;
 import static java.lang.String.valueOf;
 
 public class SpeedModifier {
-    public SpeedModifier(@NotNull ArrayList<String> permissions, @NotNull Player daSprinter) {
+    public SpeedModifier(@NotNull ArrayList <String> permissions, @NotNull Player daSprinter) {
         if (permissions.contains("playeratteditor.speed.")) {
             // looks for "playeratteditor.speed." and stores it in speedPermission
             int permissionInteger = Integer.parseInt(valueOf(permissions.lastIndexOf(".") + 1));

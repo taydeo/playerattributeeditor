@@ -10,7 +10,7 @@ import java.util.Objects;
 import static java.lang.String.valueOf;
 // EXPERIMENTAL METHOD TO CHANGE PLAYER JUMP HEIGHT.
 public class JumpModifier {
-    public JumpModifier(@NotNull ArrayList<String> permissions, Player player) {
+    public JumpModifier(@NotNull ArrayList <String> permissions, Player player) {
         if (permissions.contains("playeratteditor.jump.")) {
             int permissionInteger = Integer.parseInt(valueOf(permissions.lastIndexOf(".") + 1));
             // parses the permission to find the integer at the end of the permission node

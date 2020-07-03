@@ -20,18 +20,18 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public final class PlayerAttributeEditor extends JavaPlugin implements Listener {
 
-    public static ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
-    public static String prefix = "[PlayerAttEditor] ";
+    Logger console = Bukkit.getLogger();
+    String prefix = "[PlayerAttEditor] ";
     PluginManager pm = getServer().getPluginManager();
     public static boolean debug;
     FileConfiguration config = getConfig();
 
     @Override
     public void onEnable() {
-        console.sendMessage(ChatColor.GOLD + prefix + "Plugin successfully loaded. Made by taydeo for the Cascene Network, released to SpigotMC.org");
         pm.registerEvents(this, this);
         config.addDefault("debug", false);
         config.options().copyDefaults(true);
@@ -40,11 +40,12 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
         if (debug) {
             System.out.println(prefix + "Debug mode enabled.");
         }
+        console.info(ChatColor.GOLD + prefix + "Plugin successfully loaded. Made by taydeo for the Cascene Network, released to SpigotMC.org");
     }
 
     @EventHandler
     public void onHit(EntityDamageByEntityEvent e) {
-        @NotNull ArrayList < String > permissions = new ArrayList < > (); // For storing permissions
+        @NotNull ArrayList <String> permissions = new ArrayList <>(); // For storing permissions
         Player whoWasHit;
 
         if (e.getEntity() instanceof Player) {
@@ -54,7 +55,7 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
        So I basically made it cycle through all the players perms and
        it gets all the permission nodes that start with "playeratteditor."
    */
-            for (PermissionAttachmentInfo permInfo: whoWasHit.getEffectivePermissions()) {
+            for (PermissionAttachmentInfo permInfo : whoWasHit.getEffectivePermissions()) {
                 if (permInfo.getPermission().startsWith("playeratteditor.")) {
                     permissions.add(permInfo.getPermission());
                     new StrengthModifier(permissions, whoWasHit); // then sends the array list to StrengthModifier
@@ -70,7 +71,7 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
 
     @EventHandler
     public void onMove(PlayerMoveEvent p) { // now uses PlayerMoveEvent
-        @NotNull ArrayList < String > permissions = new ArrayList < > (); // For storing permissions... again
+        @NotNull ArrayList <String> permissions = new ArrayList <>(); // For storing permissions... again
         Player player = p.getPlayer();
         Location from = p.getFrom();
         Location to = p.getTo();
@@ -103,6 +104,6 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
 
     @Override
     public void onDisable() {
-        console.sendMessage(prefix + "Plugin unloaded.");
+        console.info(prefix + "Plugin unloaded.");
     }
 }

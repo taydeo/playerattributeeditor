@@ -10,7 +10,7 @@ import java.util.Objects;
 import static java.lang.String.valueOf;
 
 public class StrengthModifier {
-    public StrengthModifier(@NotNull ArrayList < String > permissions, @NotNull Player whoWasHit) { // converts object into string cuz it be annoying
+    public StrengthModifier(@NotNull ArrayList <String> permissions, @NotNull Player whoWasHit) { // converts object into string cuz it be annoying
         if (permissions.contains("playeratteditor.strength.")) {
             // looks for "playeratteditor.strength." and stores it in strengthPermission
             int permissionInteger = Integer.parseInt(valueOf(permissions.lastIndexOf(".") + 1));

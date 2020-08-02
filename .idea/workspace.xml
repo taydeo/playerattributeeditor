@@ -4,31 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3442e43-09ea-4048-9a20-5c34e1fb4157" name="Default Changelist" comment="Moved around some stuff">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/modifiers/HealthModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/modifiers/KnockbackModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_15_2_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_15_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playerattributeeditor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/playerattributeeditor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/LuckPermsHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/LuckPermsHook.java" afterDir="false" />
+    <list default="true" id="a3442e43-09ea-4048-9a20-5c34e1fb4157" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/PlayerAttributeEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/PlayerAttributeEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/modifiers/JumpModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/modifiers/JumpModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/modifiers/ResistModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/modifiers/ResistModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/modifiers/SpeedModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/modifiers/SpeedModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/modifiers/StrengthModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/taydeo/playerattributeeditor/modifiers/StrengthModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +175,7 @@
       <workItem from="1596309099286" duration="221000" />
       <workItem from="1596329863957" duration="3260000" />
       <workItem from="1596334072535" duration="4769000" />
-      <workItem from="1596389049992" duration="4376000" />
+      <workItem from="1596389049992" duration="4711000" />
     </task>
     <task id="LOCAL-00001" summary="went through hell to make this work, reduced classes from 6 to 2, but going to add more modifiers.">
       <created>1590262538876</created>
@@ -298,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596334196423</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Changed dependencies, added sanity checks, added 2 new modifiers">
+      <created>1596393762831</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1596393762831</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +318,8 @@
     <MESSAGE value="Fixed code inconsistencies" />
     <MESSAGE value="Massive change, now depends on LuckPerms" />
     <MESSAGE value="Moved around some stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved around some stuff" />
+    <MESSAGE value="Changed dependencies, added sanity checks, added 2 new modifiers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed dependencies, added sanity checks, added 2 new modifiers" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -367,10 +352,10 @@
     </state>
     <state x="693" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596336236098" />
     <state x="693" y="302" width="524" height="510" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590201474647" />
-    <state x="853" y="109" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1596390856183">
+    <state x="853" y="109" width="1399" height="817" key="CommitChangelistDialog2" timestamp="1596393761528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="853" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596390856183" />
+    <state x="853" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596393761528" />
     <state x="128" y="179" width="1399" height="817" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1591396623501" />
     <state x="182" y="121" width="1536" height="879" key="DiffContextDialog" timestamp="1590340961050">
       <screen x="0" y="27" width="1920" height="1053" />
@@ -433,10 +418,10 @@
     </state>
     <state x="455" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596309275353" />
     <state x="455" y="27" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1591737809327" />
-    <state x="555" y="259" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596334203305">
+    <state x="555" y="259" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596393777662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596334203305" />
+    <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596393777662" />
     <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1591230673570" />
     <state x="630" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1590273052776">
       <screen x="0" y="27" width="1920" height="1053" />

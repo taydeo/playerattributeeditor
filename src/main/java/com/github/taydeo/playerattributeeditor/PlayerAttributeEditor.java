@@ -1,9 +1,6 @@
 package com.github.taydeo.playerattributeeditor;
 
-import com.github.taydeo.playerattributeeditor.modifiers.JumpModifier;
-import com.github.taydeo.playerattributeeditor.modifiers.ResistModifier;
-import com.github.taydeo.playerattributeeditor.modifiers.SpeedModifier;
-import com.github.taydeo.playerattributeeditor.modifiers.StrengthModifier;
+import com.github.taydeo.playerattributeeditor.modifiers.*;
 import net.luckperms.api.LuckPerms;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -59,6 +56,8 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
                 new ResistModifier(permissions, player);
                 new JumpModifier(permissions, player);
                 new SpeedModifier(permissions, player);
+                new HealthModifier(permissions, player);
+                new KnockbackModifier(permissions, player);
                 if (debug) {
                     System.out.println(permissions);
                     System.out.println(player);

@@ -29,23 +29,6 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
     PlayerAttributeEditor plugin;
     LuckPerms luckPerms;
 
-    public static void setPlayerAttributes(Player player) { // searches through player perm nodes
-        ArrayList<String> permissions = new ArrayList<>();
-        for (PermissionAttachmentInfo permInfo : player.getEffectivePermissions()) {
-            if (permInfo.getPermission().startsWith("playeratteditor.")) {
-                permissions.add(permInfo.getPermission());
-                new StrengthModifier(permissions, player); // then sends the array list to all modifiers
-                new ResistModifier(permissions, player);
-                new JumpModifier(permissions, player);
-                new SpeedModifier(permissions, player);
-                if (debug) {
-                    System.out.println(permissions);
-                    System.out.println(player);
-                }
-            }
-        }
-    }
-
     @Override
     public void onEnable() {
         // finds luckperms instance
@@ -70,11 +53,26 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
 
     @EventHandler // event independent of luckperms, supposed to load all previous permission nodes
     public void onPlayerJoin(PlayerJoinEvent p) {
-        @NotNull ArrayList <String> permissions = new ArrayList <>(); // For storing permissions
-
         Player player = p.getPlayer();
 
         setPlayerAttributes(player);
+    }
+
+    public static void setPlayerAttributes(Player player) { // searches through player perm nodes
+        ArrayList<String> permissions = new ArrayList<>();
+        for (PermissionAttachmentInfo permInfo : player.getEffectivePermissions()) {
+            if (permInfo.getPermission().startsWith("playeratteditor.")) {
+                permissions.add(permInfo.getPermission());
+                new StrengthModifier(permissions, player); // then sends the array list to all modifiers
+                new ResistModifier(permissions, player);
+                new JumpModifier(permissions, player);
+                new SpeedModifier(permissions, player);
+                if (debug) {
+                    System.out.println(permissions);
+                    System.out.println(player);
+                }
+            }
+        }
     }
 
     @Override

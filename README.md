@@ -16,7 +16,7 @@ Of course, its github lol
 
 ## Where can I get support?
 
-DM me on discord, might make a server if it gets popular. tadeo#8262
+https://discord.gg/vh2qaj -  official discord server for all my plugins
 
 ## Can I help you make updates?
 

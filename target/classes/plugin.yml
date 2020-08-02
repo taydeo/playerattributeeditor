@@ -1,10 +1,12 @@
 name: PlayerAttributeEditor
 version: 1.2-SNAPSHOT
-main: net.cascene.playerattributeeditor.PlayerAttributeEditor
+main: com.github.taydeo.playerattributeeditor.PlayerAttributeEditor
 api-version: 1.13
 authors: [taydeo]
 description: Changes player attributes with the use of permission nodes.
 website: cascene.net
+depend:
+  - LuckPerms
 permissions:
   playeratteditor.strength:
     description: Gives player strength

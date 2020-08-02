@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.cascene</groupId>
+    <groupId>com.github.taydeo.playerattributeeditor</groupId>
     <artifactId>PlayerAttributeEditor</artifactId>
     <version>1.2-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -16,7 +16,6 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <url>cascene.net</url>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
@@ -81,6 +80,12 @@
             <groupId>com.destroystokyo.paper</groupId>
             <artifactId>paper-api</artifactId>
             <version>1.15.2-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.luckperms</groupId>
+            <artifactId>api</artifactId>
+            <version>5.1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

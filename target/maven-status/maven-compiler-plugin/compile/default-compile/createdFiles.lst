@@ -1,5 +1,6 @@
-net/cascene/playerattributeeditor/PlayerAttributeEditor.class
-net/cascene/playerattributeeditor/modifiers/JumpModifier.class
-net/cascene/playerattributeeditor/modifiers/ResistModifier.class
-net/cascene/playerattributeeditor/modifiers/StrengthModifier.class
-net/cascene/playerattributeeditor/modifiers/SpeedModifier.class
+com\github\taydeo\playerattributeeditor\modifiers\JumpModifier.class
+com\github\taydeo\playerattributeeditor\modifiers\StrengthModifier.class
+com\github\taydeo\playerattributeeditor\LuckPermsHook.class
+com\github\taydeo\playerattributeeditor\PlayerAttributeEditor.class
+com\github\taydeo\playerattributeeditor\modifiers\SpeedModifier.class
+com\github\taydeo\playerattributeeditor\modifiers\ResistModifier.class

@@ -5,7 +5,6 @@ import com.github.taydeo.playerattributeeditor.modifiers.ResistModifier;
 import com.github.taydeo.playerattributeeditor.modifiers.SpeedModifier;
 import com.github.taydeo.playerattributeeditor.modifiers.StrengthModifier;
 import net.luckperms.api.LuckPerms;
-import net.luckperms.api.LuckPermsProvider;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -16,7 +15,6 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.logging.Logger;
@@ -31,6 +29,7 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
 
     @Override
     public void onEnable() {
+        plugin = this;
         // finds luckperms instance
         RegisteredServiceProvider<LuckPerms> provider = Bukkit.getServicesManager().getRegistration(LuckPerms.class);
         if (provider != null) {
@@ -49,13 +48,6 @@ public final class PlayerAttributeEditor extends JavaPlugin implements Listener 
         }
 
         console.info(ChatColor.GOLD + prefix + "PlayerAttributeEditor, made by taydeo!");
-    }
-
-    @EventHandler // event independent of luckperms, supposed to load all previous permission nodes
-    public void onPlayerJoin(PlayerJoinEvent p) {
-        Player player = p.getPlayer();
-
-        setPlayerAttributes(player);
     }
 
     public static void setPlayerAttributes(Player player) { // searches through player perm nodes

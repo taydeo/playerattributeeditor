@@ -1,6 +1,5 @@
 package com.github.taydeo.playerattributeeditor.modifiers;
 
-import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
@@ -19,8 +18,8 @@ public class JumpModifier {
             Objects.requireNonNull(player.getPlayer()).getLocation().getDirection().multiply((double) permissionInteger);
             // any value you put will increase the players jump height in all directions.
         } else {
-            Objects.requireNonNull(player.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED)).setBaseValue(1.0);
-            System.out.println("Machine broke, using default 1.0.");
+            Objects.requireNonNull(player.getPlayer()).getLocation().getDirection().multiply(1);
+            System.out.println("Using default 1.0 since no permission node was given for JUMP.");
         }
     }
 }
